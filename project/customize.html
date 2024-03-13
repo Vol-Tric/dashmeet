@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                HealthHub
+            </div>
+            <div >
+                <ul class="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="diet.html">Diet</a></li>
+                    <li><a href="workout.html">Workout</a></li>
+                    <li><a href="customize.html">Customize</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Plans</h2>
+            <p>Enter details to know about aur plan</p>
+        </section>
+
+
+        <form id="customizationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+        
+            <label for="plan">Workout Plan:</label>
+            <select id="plan" name="plan">
+              <option value="weight_loss">Weight Loss</option>
+              <option value="fat_loss">Fat Loss</option>
+              <option value="calisthenics">Calisthenics</option>
+              <option value="cardio">Cardio</option>
+            </select>
+        
+            
+        
+            <button type="button" onclick="calculatePrice()">Calculate Price</button>
+            
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" readonly>
+        </form>
+        
+
+        <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+        <p>Email: info@healthhub.com</p>
+        <p>Phone: 123-456-7890</p>
+        </section>
+    </main>
+    
+    <script>
+        function calculatePrice() {
+          var plan = document.getElementById('plan').value;
+          var price;
+    
+          switch(plan) {
+            case 'weight_loss':
+              price = 899;
+              break;
+            case 'fat_loss':
+              price = 1299;
+              break;
+            case 'calisthenics':
+              price = 1599;
+              break;
+            case 'cardio':
+              price = 999;
+              break;
+            default:
+              price = 0;
+              break;
+          }
+    
+          document.getElementById('price').value = 'Rs ' + price.toFixed(2);
+        }
+    </script>
+
+
+
+
+    
+</body>
+</html>

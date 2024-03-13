@@ -1,0 +1,19 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    color: white;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transform: rotate(45deg); */
+    transition: all 2s ease-in 0s;
+}
+
+
+div:hover{
+    background-color: aqua;
+    color: black;
+    font-size: larger;
+    text-align: center;
+    transform: translate(200px , 200px);
+}

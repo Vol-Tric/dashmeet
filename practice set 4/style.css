@@ -1,0 +1,36 @@
+div{
+    height: 100px;
+    border-width: 2px;
+    border-color: black;
+    border-style:dashed;
+
+    
+}
+
+#navbar{
+    
+    background-color: black;
+    color: white;
+}
+button{
+    background-color: #f0880f;
+}
+#logo{
+    color: #f0880f;
+    font-size: 25px;
+}
+a{
+    margin-right: 200px;
+    color: white;
+    opacity: 0.5;
+}
+#main{
+    color: white;
+    background-color: pink;
+    opacity: 0.5;
+}
+#footer{
+    color: white;
+    background-color: peachpuff;
+    opacity: 0.5;
+}

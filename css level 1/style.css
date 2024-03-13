@@ -1,0 +1,21 @@
+h1{
+    color: red;
+    font-weight: 200;
+}
+button{
+    background-color: aqua;
+    color: blue;
+}
+/* calling container by their id */
+#noni{
+    color: green;
+}
+/* calling by class */
+.hello{
+    color: brown;
+}
+
+.testing{
+    text-align: center;
+    text-decoration: underline;
+}
